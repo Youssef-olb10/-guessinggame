@@ -1,0 +1,18 @@
+TITLE = "Projet Guessing Game"
+DATE = $(shell date '+%Y-%m-%d %H:%M:%S')
+LINES = $(shell wc -l < guessinggame.sh | tr -d ' ')
+README = README.md
+
+all: $(README)
+
+$(README): guessinggame.sh
+	echo "# $(TITLE)" > $(README)
+	echo "" >> $(README)
+	echo "Date et heure d'exécution : $(DATE)" >> $(README)
+	echo "" >> $(README)
+	echo "Nombre de lignes de code dans guessinggame.sh : $(LINES)" >> $(README)
+	echo "" >> $(README)
+	echo "[GitHub Pages](https://<VOTRE-UTILISATEUR>.github.io/<VOTRE-REPO>/)" >> $(README)
+
+clean:
+	rm -f $(README)
