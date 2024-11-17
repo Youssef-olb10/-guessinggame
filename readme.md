@@ -17,5 +17,5 @@ Ce projet est un jeu en ligne de commande écrit en *Bash*. Le but du jeu est de
 ### Étapes d'installation
 1. Clonez ce projet depuis GitHub :
    ```bash
-   git clone https://github.com/imane-barmane/guessinggame.git
+   git clone https://github.com/Youssef-olb10/guessinggame.git
    cd guessinggame
